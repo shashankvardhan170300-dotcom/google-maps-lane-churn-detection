@@ -1,0 +1,6 @@
+"""Make the project root importable for tests (``from src... import``)."""
+
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
